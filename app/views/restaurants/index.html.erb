@@ -1,0 +1,17 @@
+<% @restaurants.each do |restaurant| %>
+  <div class="container-fluid index">
+    <div class="row">
+      <h1> <%= link_to restaurant.name, restaurant_path(restaurant)%></h1>
+      <h2> <%= restaurant.address %></h1>
+      <h3> <%= restaurant.category  %></h3>
+      <h3> <%= restaurant.phone_number  %></h3>
+      <%= link_to restaurant_path(restaurant.id.to_i), method: :delete, data: { confirm: "Are you sure?"} do %>
+          <i class="fa fa-trash"></i>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<div class="container-fluid">
+  <%= link_to "Add a Restaurant", new_restaurant_path, class: "btn btn-primary btn-lg"  %>
+</div>

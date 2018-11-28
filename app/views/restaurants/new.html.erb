@@ -1,0 +1,13 @@
+<div class="container-fluid form">
+  <%= simple_form_for [@restaurant] do |f| %>
+    <%=f.input :name  %>
+    <%=f.input :address  %>
+    <%=f.input :phone_number  %>
+    <%=f.input :category  %>
+    <%=f.submit "Add a Restaurant", class: "btn btn-success btn-lg"  %>
+  <% end %>
+</div>
+
+<div class="container-fluid">
+  <%= link_to "Show All Restaurants", restaurants_path , class: "btn btn-primary btn-lg"  %>
+</div>

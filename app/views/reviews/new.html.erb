@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <h1>REVIEWS</h1>
+</div>
+
+<div class="container-fluid form">
+  <%= simple_form_for [@restaurant, @review] do |r| %>
+    <%=r.input :content  %>
+    <%=r.input :rating  %>
+    <%=r.submit "Rate now!", class: "btn btn-success btn-lg"  %>
+  <% end %>
+</div>
+
