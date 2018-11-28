@@ -19,25 +19,32 @@ restaurants_attributes = [
     address:      '56A Shoreditch High St, London E1 6PQ',
     phone_number:  '914858491',
     category: 'chinese'
+  },
+  {
+    name:         'Quicas',
+    address:      'Rotunda da liberdade',
+    phone_number:  '914858491',
+    category: 'japanese'
   }
 ]
 Restaurant.create!(restaurants_attributes)
 puts 'Finished!'
 
 
-puts 'Creating reviews'
-reviews_attributes = [
-  {
-    restaurant_id: 1,
-    content: "Blablablablablabla",
-    rating: 5
-  },
-  {
-    restaurant_id: 1,
-    content: "Blablablablablabla",
-    rating: 3
-  }
-]
-Review.create!(reviews_attributes)
-puts 'Finished!'
+
+# puts 'Creating reviews'
+# reviews_attributes = [
+#   {
+#     restaurant_id: 1,
+#     content: "Blablablablablabla",
+#     rating: 5
+#   },
+#   {
+#     restaurant_id: 1,
+#     content: "Blablablablablabla",
+#     rating: 3
+#   }
+# ]
+# Review.create!(reviews_attributes)
+# puts 'Finished!'
 

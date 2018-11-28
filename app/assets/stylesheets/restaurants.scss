@@ -41,9 +41,10 @@
 
 .image img{
    /* Preserve aspet ratio */
-        width: 100%;
-        padding: 0px;
+  width: 100%;
+  padding: 0px;
 }
+
 
 .padding-override {
   padding: 0px !important;
@@ -61,4 +62,9 @@
 
 a {
   text-decoration: none;
+}
+
+.index:hover {
+  background-color: black;
+  color: white;
 }

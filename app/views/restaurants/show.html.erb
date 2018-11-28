@@ -21,6 +21,9 @@
 </div>
 
 <div class="container-fluid">
+  <h1> Our Amazing Review (or not) </h1>
+</div>
+<div class="container-fluid">
   <ul class="list-inline" >
     <% @reviews.each do |review| %>
       <li class="list-inline-item"><%= review.content  %></li>
@@ -38,3 +41,41 @@
 </div>
 
 
+<!-- <div class="container-fluid">
+  <div class="row">
+    <h1> <%= link_to @restaurant.name.upcase, restaurants_path %></h1>
+  </div>
+
+  <div class="row">
+    <h2> Address: <%= @restaurant.address %></h2>
+  </div>
+
+  <div class="row">
+    <h3> Category:  <%= @restaurant.category %></h3>
+  </div>
+
+  <div class="row">
+    <h3> Phone_number: <%= @restaurant.phone_number %></h3>
+  </div>
+
+  <div class="row">
+    <div class="image">
+      <%= image_tag "https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?cs=srgb&dl=cafe-chairs-menu-6267.jpg&fm=jpg" %>
+    </div>
+  </div>
+  <div class="row">
+    <ul class="list-inline" >
+      <% @reviews.each do |review| %>
+        <li class="list-inline-item"><%= review.content  %></li>
+        <li class="list-inline-item">
+        <% review.rating.times do %>
+          <i class="fas fa-star"></i>
+        <% end %>
+        </li>
+    <% end %>
+    </ul>
+  </div>
+  <div class="row">
+    <h2> <%= link_to "Add another review", restaurant_reviews_new_path(@restaurant), class: "btn btn-primary btn-lg" %></h2>
+  </div>
+</div> -->
